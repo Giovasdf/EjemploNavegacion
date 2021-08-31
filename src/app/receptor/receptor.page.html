@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Receptor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="chatbox-ellipses-outline" slot="start"></ion-icon>
+      <ion-label>Mensaje Recibido</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+    El mensaje recibido es : {{mensaje}}
+    </ion-card-content>
+  </ion-card>  
+  <ion-button expand="block" (click)="goToEmisor()">Volver al Emisor</ion-button>
+  <ion-button expand="block" (click)="goToHome()">Ir a Home</ion-button>
+
+</ion-content>
