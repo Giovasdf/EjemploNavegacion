@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'receptor',
     loadChildren: () => import('./receptor/receptor.module').then( m => m.ReceptorPageModule)
   },
+  {
+    path: 'componentes-material',
+    loadChildren: () => import('./componentes-material/componentes-material.module').then( m => m.ComponentesMaterialPageModule)
+  },
 ];
 
 @NgModule({
